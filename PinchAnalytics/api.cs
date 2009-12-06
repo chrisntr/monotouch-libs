@@ -24,19 +24,19 @@ namespace PinchMedia {
 		[Static][Export ("endBeacon")]
 		void EndBeacon();
 
-		[Export ("startSubBeaconWithName")]
+		[Export ("startSubBeaconWithName:")]
 		void StartSubBeacon(string subBeaconName);
 
-		[Export ("startTimedSubBeaconWithName")]
+		[Export ("startTimedSubBeaconWithName:")]
 		void StartTimedSubBeacon(string subBeaconName);
 		
 		[Export ("startSubBeaconWithName:timeSession:")]
 		void StartSubBeacon(string subBeaconName, bool timeSession);
 
-		[Export ("endSubBeaconWithName")]
+		[Export ("endSubBeaconWithName:")]
 		void EndSubBeacon(string subBeaconName);
 
-		[Export ("setBeaconLocation")]
+		[Export ("setBeaconLocation:")]
 		void SetBeaconLocation(CLLocation newLocation);
 
 		[Static][Export ("shared")]
